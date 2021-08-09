@@ -1,0 +1,21 @@
+.simpson {
+    text-align: center;
+    border: 1px solid #000;
+    padding: 15px;
+    background-color: antiquewhite;
+}
+
+.simpson img {
+    max-height: 260px;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.simpson div {
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+}
+
+.simpson span {
+    font-weight: 700;
+}
