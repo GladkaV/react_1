@@ -1,0 +1,10 @@
+.users {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 15px;
+}
+.users li {
+    padding-right: 10px;
+}
