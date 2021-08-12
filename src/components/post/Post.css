@@ -1,0 +1,8 @@
+.post {
+    margin-bottom: 50px;
+    background-color: bisque;
+    padding: 15px;
+}
+.post span {
+    font-weight: 700;
+}
