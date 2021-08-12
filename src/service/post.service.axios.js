@@ -1,13 +1,10 @@
 import axois from "axios";
-
-let config = {
-    baseURL: 'https://jsonplaceholder.typicode.com/posts',
-}
+import {config} from "./user.service.axios";
 
 let axiosInstance = axois.create(config);
 
 const getAxioPosts = () => {
-    return axiosInstance.get('');
+    return axiosInstance.get('/posts');
 }
 
 export {getAxioPosts};

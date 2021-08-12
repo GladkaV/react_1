@@ -1,13 +1,10 @@
 import axios from "axios";
-
-let config = {
-    baseURL: 'https://jsonplaceholder.typicode.com/comments',
-}
+import {config} from "./user.service.axios";
 
 let axiosInstance = axios.create(config);
 
 const getAxioComments = () => {
-    return axiosInstance.get('');
+    return axiosInstance.get('/comments');
 }
 
 export {getAxioComments};
