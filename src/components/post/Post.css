@@ -1,0 +1,9 @@
+.post {
+    margin-bottom: 15px;
+    padding: 0 10px 5px;
+    border-bottom: 1px solid #000;
+    background-color: #ffca92;
+}
+.post-title {
+    font-weight: 700;
+}
