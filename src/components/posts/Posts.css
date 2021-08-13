@@ -1,0 +1,39 @@
+h2 {
+    text-align: center;
+}
+.posts {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 5px;
+}
+.post-descr {
+    max-width: 600px;
+    text-align: center;
+    padding: 10px;
+    background-color: #befffd;
+    margin: 50px auto 30px;
+}
+.post-descr h4 {
+    margin: 10px 0;
+    border-bottom: 1px solid #000;
+    padding: 0 10px;
+}
+.post-descr p {
+    margin: 10px;
+}
+
+.post-descr button {
+    border: 1px solid #ffd8be;
+    padding: 3px 15px;
+    max-width: 300px;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+    background-color: #fff8be;
+    transition: all .3s;
+}
+.post-descr button:hover {
+    background-color: #beffe3;
+    border-color: #beceff;
+}

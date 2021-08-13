@@ -1,0 +1,24 @@
+.comment {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #000;
+}
+.comment button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    background-color: #befffd;
+    text-transform: uppercase;
+    padding: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .3s;
+}
+.comment button:hover {
+    background-color: #92d4d1;
+}

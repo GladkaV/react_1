@@ -1,0 +1,12 @@
+.post {
+    border: 1px solid #ffd8be;
+    padding: 3px;
+    outline: none;
+    cursor: pointer;
+    background-color: #fff8be;
+    transition: all .3s;
+}
+.post:hover {
+    background-color: #beffe3;
+    border-color: #beceff;
+}
