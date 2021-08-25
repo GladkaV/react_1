@@ -1,0 +1,40 @@
+.app {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-bottom: 30px;
+}
+h2 {
+    text-align: center;
+}
+.list-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: bisque;
+    padding: 10px;
+    margin: 0 0 20px;
+    list-style: none;
+}
+.list-links a {
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 0 10px;
+    margin: 5px 0;
+    position: relative;
+}
+.list-links a:before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .3s;
+    height: 1px;
+    width: 0;
+    background-color: #000000;
+}
+.list-links a:hover:before {
+    width: 100%;
+}

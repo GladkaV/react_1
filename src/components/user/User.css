@@ -1,0 +1,10 @@
+.user {
+    background-color: bisque;
+    padding: 0 10px 5px;
+}
+.user span {
+    display: block;
+    font-weight: 500;
+    border-bottom: 1px solid #000;
+    margin-top: 10px;
+}
