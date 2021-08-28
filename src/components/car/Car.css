@@ -1,0 +1,33 @@
+.car {
+    text-align: right;
+    padding: 10px 10px 0;
+    background-color: aliceblue;
+}
+
+.car > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 10px;
+}
+
+.car span {
+    font-weight: 700;
+    text-align: left;
+}
+
+.car-btns button {
+    outline: none;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.car-btns button:first-child {
+    background-color: #ec4f4f;
+}
+
+.car-btns button:last-child {
+    background-color: #54d7d7;
+}
+

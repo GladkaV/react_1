@@ -1,0 +1,10 @@
+.post {
+    padding: 10px;
+    background-color: antiquewhite;
+}
+
+.post span {
+    font-weight: 700;
+    margin: 0 5px;
+    text-decoration: underline;
+}
