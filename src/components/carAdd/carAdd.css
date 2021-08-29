@@ -1,0 +1,27 @@
+.car-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.car-form label {
+    display: block;
+    font-weight: 700;
+    text-indent: 10px;
+}
+
+.car-form input {
+    width: 100%;
+    outline: none;
+    padding: 5px 10px;
+    margin: 5px 0 15px;
+}
+
+.car-form button {
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 5px 10px;
+    margin-top: 15px;
+    border: 1px solid #000;
+    background-color: #f19e3f;
+}

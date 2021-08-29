@@ -1,0 +1,28 @@
+.car-edit label {
+    display: grid;
+    font-weight: 700;
+    grid-template-columns: 65px 1fr;
+}
+
+.car-edit input {
+    width: 100%;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+.car-edit button {
+    outline: none;
+    border: none;
+    background-color: #f19e3f;
+    padding: 5px 10px;
+    width: 100%;
+    cursor: pointer;
+    transition: all .3s;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.car-edit button:hover {
+    background-color: #f88f0c;
+}
