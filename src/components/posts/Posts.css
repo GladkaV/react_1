@@ -1,0 +1,19 @@
+.posts {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 30px 20px;
+    margin-bottom: 30px;
+}
+.posts > div {
+    padding: 5px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+.posts a {
+    color: #000;
+    text-decoration: none;
+    background-color: #0cb37d;
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+}

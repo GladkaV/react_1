@@ -1,0 +1,13 @@
+.post-details {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.post-details > div {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #000;
+}
+.post-details span {
+    font-weight: 700;
+}

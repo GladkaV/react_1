@@ -1,0 +1,16 @@
+.user {
+    font-weight: 700;
+    text-align: center;
+    padding: 5px;
+    border-bottom: 1px solid #000;
+}
+
+.user button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    outline: none;
+    padding: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
