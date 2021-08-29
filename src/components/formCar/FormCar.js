@@ -1,14 +1,14 @@
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import {editCarApi} from "../../service/editCar.api";
 import './FormCar.css';
 import {addCarApi} from "../../service/addCar.api";
 
 export default function FormCar({car, showEditCar, showAllCar}) {
-    let [editCar, setFormCar] = useState({
-        'model': '',
-        'price': '',
-        'year': ''
-    });
+    let [editCar, setFormCar] = useState({});
+
+    useEffect(() => {
+        setFormCar({...car});
+    }, [car])
 
     let onchange = (e) => {
         setFormCar({...editCar, [e.target.name]: e.target.value});
