@@ -27,17 +27,17 @@ export default function CarEdit({car}) {
         <form onSubmit={onSubmit} className={'car-edit'}>
             <label>
                 Model:
-                <input type="text" name={'model'} value={editCar.model} onChange={onEditCar} required/>
+                <input type="text" name={'model'} value={editCar.model || ''} onChange={onEditCar} required/>
             </label>
 
             <label>
                 Price:
-                <input type="number" name={'price'} min={0} value={editCar.price} onChange={onEditCar} required/>
+                <input type="number" name={'price'} min={0} value={editCar.price || ''} onChange={onEditCar} required/>
             </label>
 
             <label>
                 Year:
-                <input type="number" name={'year'} min={1990} max={2021} value={editCar.year} onChange={onEditCar} required/>
+                <input type="number" name={'year'} min={1990} max={2021} value={editCar.year || ''} onChange={onEditCar} required/>
             </label>
 
             {
