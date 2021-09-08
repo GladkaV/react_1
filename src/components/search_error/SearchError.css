@@ -1,0 +1,15 @@
+.search-error-text {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 500;
+    padding: 20px 0 10px;
+}
+.search-error-text span {
+    display: block;
+    font-size: 30px;
+    margin-top: 20px;
+}
+.search-error-img {
+    max-width: 600px;
+    margin: 0 auto;
+}

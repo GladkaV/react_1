@@ -1,0 +1,35 @@
+.header_search {
+    margin-left: auto;
+    display: flex;
+    position: relative;
+    max-width: 300px;
+    width: 100%;
+}
+.header_search input {
+    width: 100%;
+    padding: 5px 30px 5px 5px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #000;
+    background: transparent;
+}
+.header_search button{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    outline: none;
+    background-size: cover;
+    background: url("../../assets/img/search.svg") no-repeat center;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border: none;
+}
+@media (max-width: 1000px) {
+    .header_search {
+        margin-bottom: 40px;
+    }
+}

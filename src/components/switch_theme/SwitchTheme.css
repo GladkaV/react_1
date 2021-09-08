@@ -1,0 +1,40 @@
+.switch-theme {
+    margin-left: 30px;
+    display: flex;
+}
+.switch-theme button {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.switch-theme-dark {
+    opacity: 1;
+    background-image: url("../../assets/img/dark.svg");
+}
+.switch-theme-light {
+    opacity: .3;
+    margin-left: 9px;
+    position: relative;
+    background-image: url("../../assets/img/light.svg");
+}
+.switch-theme-light::before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: #000;
+}
+@media (max-width: 1000px) {
+    .switch-theme {
+        margin-left: auto;
+    }
+}

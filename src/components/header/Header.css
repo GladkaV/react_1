@@ -1,0 +1,101 @@
+.header {
+    box-shadow: 0px 0px 6px 0px #000;
+    padding: 20px 0 10px;
+    background-color: darksalmon;
+    position: relative;
+}
+.header-inner{
+    display: flex;
+    align-items: center;
+    max-height: 110px;
+}
+.logo {
+    max-width: 110px;
+    flex-grow: 1;
+}
+.logo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.header-block {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    height: 100%;
+    transition: all .3s;
+}
+.header-block.active {
+    transform: translateX(0%);
+}
+.header-user {
+    width: 40px;
+    height: 40px;
+    background-image: url("../../assets/img/user.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px;
+    margin-left: 20px;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+.header-btn {
+    display: none;
+    margin-left: auto;
+    width: 34px;
+    height: 24px;
+    padding: 0;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.header-btn::after,
+.header-btn::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    background-color: #000;
+    transition: all .3s;
+}
+.header-btn::after {
+    top: 0;
+}
+.header-btn::before {
+    bottom: 0;
+}
+.header-btn span {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transition: all .3s;
+}
+.header-btn.active span {
+    width: 0;
+}
+.header-btn.active::after {
+    transform: rotate(45deg) translate(7px, 8px);
+}
+.header-btn.active::before {
+    transform: rotate(-45deg) translate(7px, -8px);
+}
+@media (max-width: 1000px) {
+    .header-block {
+        transform: translateX(-110%);
+        position: absolute;
+        flex-wrap: wrap;
+        max-width: 320px;
+        height: auto;
+        left: 0;
+        top: 117px;
+        padding: 40px 10px 20px;
+        background-color: darksalmon;
+    }
+    .header-btn {
+        display: flex;
+    }
+}

@@ -1,0 +1,23 @@
+.footer {
+    padding: 20px 0 10px;
+    background-color: darksalmon;
+    font-size: 20px;
+    margin-top: auto;
+}
+.footer p {
+    max-width: max-content;
+    margin: 20px auto;
+    font-weight: 500;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+}
+.footer span {
+    display: block;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+}
+.footer a {
+    color: lightgoldenrodyellow;
+    text-decoration: none;
+}

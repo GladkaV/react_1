@@ -1,0 +1,24 @@
+.movie-carousel-item {
+    /*padding: 0 10px;*/
+    margin: 0 10px;
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
+.movie-carousel-item-img {
+    position: relative;
+    padding-top: 150%;
+}
+.movie-carousel-item img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.movie-carousel-title {
+    padding: 5px 10px;
+    font-weight: 500;
+}
+.movie-carousel-star {
+    padding: 5px 10px 0;
+}

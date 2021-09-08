@@ -1,0 +1,9 @@
+.movies-carousel {
+    padding: 0 30px;
+}
+.movies-carousel .slick-next {
+    right: -35px;
+}
+.movies-carousel .slick-prev {
+    left: -35px;
+}

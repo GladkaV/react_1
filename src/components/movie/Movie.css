@@ -1,0 +1,118 @@
+.movie {
+    padding: 40px 0 20px;
+}
+.movie-info {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+}
+@media (max-width: 600px) {
+    .movie-info {
+        flex-direction: column;
+    }
+}
+.movie-info-img {
+    width: 100%;
+    max-width: 300px;
+    flex-shrink: 0;
+}
+.movie-info-img img {
+    width: 100%;
+}
+.movie-info-box {
+    padding-left: 20px;
+}
+@media (max-width: 600px) {
+    .movie-info-img {
+        margin: 0 auto 20px;
+    }
+    .movie-info-box {
+        padding-left: 0;
+    }
+}
+.movie-info-box h1 {
+    margin: 0 0 10px;
+    font-size: 26px;
+    font-weight: 500;
+}
+.movie-info-descr {
+    margin: 10px 0;
+}
+.movie-info-descr span {
+    font-weight: 700;
+}
+.movie-info-star {
+    margin-bottom: 15px;
+}
+.movie-info-about {
+    margin-bottom: 10px;
+}
+.movie-info-about span {
+    font-weight: 700;
+}
+.movie-info-about ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+.movie-info-about li + li {
+    margin-left: 10px;
+}
+.movie-info-about li:not(:last-child)::after {
+    content: ',';
+}
+.movie-list-title {
+    display: block;
+    margin: 40px 15px 30px;
+    font-size: 24px;
+    text-align: center;
+}
+.movie-list {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px 30px;
+    padding: 0 0 20px;
+    margin: 0 auto 50px;
+    max-width: 800px;
+    list-style: none;
+}
+@media (max-width: 600px) {
+    .movie-list {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px 20px;
+        font-size: 15px;
+    }
+}
+@media (max-width: 450px) {
+    .movie-list {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px 10px;
+    }
+}
+.movie-list li {
+    display: grid;
+    grid-template-rows: 100px 1fr;
+}
+.movie-list span {
+    display: block;
+    text-align: center;
+    padding: 10px 5px 5px;
+}
+.movie-list-img {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.movie-list img {
+    max-width: 100%;
+    max-height: 100px;
+}
+.movie-frame {
+    margin-top: 30px;
+}
+.movie-frame img {
+    width: 100%;
+}
