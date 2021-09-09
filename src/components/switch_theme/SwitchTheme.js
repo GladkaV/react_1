@@ -1,36 +1,18 @@
-import {useState} from "react";
 import './SwitchTheme.css';
-
-const css = `
-        html { 
-            filter: invert(100%);
-            background: #fefefe 
-        }
-        * { 
-            background-color: inherit 
-        }
-        img:not([src*=".svg"]), video { 
-            filter: invert(100%) 
-        }
-        .switch-theme-light {
-            opacity: 1;
-        }
-        .switch-theme-dark {
-            opacity: .3;
-        }`
+import {useDispatch} from "react-redux";
+import {change_theme} from "../../redux/action";
 
 export default function SwitchTheme() {
-    let [theme, setTheme] = useState(false);
+    let dispatch = useDispatch();
+
+    const onclick = (value) => {
+        dispatch(change_theme(value));
+    }
 
     return (
         <div className={'switch-theme'}>
-            <button onClick={() => setTheme(true)} className={'switch-theme-dark'}></button>
-            <button onClick={() => setTheme(false)} className={'switch-theme-light'}></button>
-
-            {
-                theme && <style>{css}</style>
-            }
-
+            <button onClick={() => onclick('active')} className={'switch-theme-dark'}></button>
+            <button onClick={() => onclick(false)} className={'switch-theme-light'}></button>
         </div>
     );
 }

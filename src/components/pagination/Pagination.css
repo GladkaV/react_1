@@ -44,3 +44,13 @@
     box-shadow: none;
     color: #999;
 }
+.app.active .paginationItem,
+.app.active .next,
+.app.active .prev {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}
+.app.active .paginationItem.active {
+    border-color: #fff;
+}

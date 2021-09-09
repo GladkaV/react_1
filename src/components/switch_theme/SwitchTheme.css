@@ -38,3 +38,11 @@
         margin-left: auto;
     }
 }
+.app.active .switch-theme-dark {
+    opacity: .3;
+    filter: invert(100%);
+}
+.app.active .switch-theme-light {
+    opacity: 1;
+    filter: invert(100%);
+}

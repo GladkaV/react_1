@@ -1,4 +1,5 @@
 import {
+    CHANGE_THEME,
     GET_CRIME,
     GET_DRAMA,
     GET_FANTASY,
@@ -12,6 +13,7 @@ let initialState = {
     crime: [],
     drama: [],
     fantasy: [],
+    theme: false,
 }
 export const moviesReducer = (state = initialState, action) => {
     switch (action.type) {
@@ -25,6 +27,8 @@ export const moviesReducer = (state = initialState, action) => {
             return {...state, drama: [...action.payload]};
         case GET_FANTASY:
             return {...state, fantasy: [...action.payload]};
+        case CHANGE_THEME:
+            return {...state, theme: action.payload};
         default:
             return state;
     }

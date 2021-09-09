@@ -5,6 +5,9 @@
     color: #000;
     text-decoration: none;
 }
+.app.active .movie-card {
+    color: #fff;
+}
 @media (max-width: 420px) {
     .movie-card {
         grid-template-columns: 1fr;

@@ -10,6 +10,9 @@
     background-image: url("../../assets/img/arrow.svg");
     transition: all .3s;
 }
+.app.active .slick-arrow {
+    filter: invert(100%);
+}
 @media (max-width: 600px) {
     .slick-arrow {
         width: 30px;

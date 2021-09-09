@@ -14,7 +14,7 @@ export default function Main() {
 
     useEffect(() => {
         dispatch(getMoviesThunk());
-    });
+    }, []);
 
     return (
         <div className={'main'}>

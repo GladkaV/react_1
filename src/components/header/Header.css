@@ -4,6 +4,10 @@
     background-color: darksalmon;
     position: relative;
 }
+.app.active .header {
+    box-shadow: 0px 0px 6px 0px #fff;
+    background-color: #443263;
+}
 .header-inner{
     display: flex;
     align-items: center;
@@ -28,7 +32,7 @@
 .header-block.active {
     transform: translateX(0%);
 }
-.header-user {
+.header_user {
     width: 40px;
     height: 40px;
     background-image: url("../../assets/img/user.svg");
@@ -38,6 +42,9 @@
     margin-left: 20px;
     border: 1px solid #000;
     border-radius: 50%;
+}
+.app.active .header_user {
+    filter: invert(100%);
 }
 .header-btn {
     display: none;

@@ -10,14 +10,14 @@ import {useSelector} from "react-redux";
 import MenuMovies from "./components/menu_movies/MenuMovies";
 
 function App() {
-    let {movies, genres} = useSelector(store => {
+    let {movies, genres, theme} = useSelector(store => {
         let {moviesReducer} = store;
         return moviesReducer;
     })
 
     return (
         <Router>
-            <div className={'app'}>
+            <div className={`app ${theme || ''}`}>
                 <div className={'content'}>
                     <Header/>
 

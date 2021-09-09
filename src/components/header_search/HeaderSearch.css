@@ -14,6 +14,14 @@
     border-bottom: 2px solid #000;
     background: transparent;
 }
+.app.active .header_search input {
+    border-color: #fff;
+    color: #fff;
+}
+.app.active .header_search input::placeholder {
+    color: #fff;
+    opacity: .6;
+}
 .header_search button{
     cursor: pointer;
     position: absolute;
@@ -27,6 +35,9 @@
     height: 20px;
     padding: 0;
     border: none;
+}
+.app.active .header_search button {
+    filter: invert(100%);
 }
 @media (max-width: 1000px) {
     .header_search {

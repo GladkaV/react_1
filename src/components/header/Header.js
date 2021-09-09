@@ -29,7 +29,7 @@ export default function Header() {
 
                         <HeaderSearch/>
 
-                        <Link to={'/'} className={'header-user'}></Link>
+                        <Link to={'/'} className={'header_user'}></Link>
 
                         <SwitchTheme/>
                     </div>
