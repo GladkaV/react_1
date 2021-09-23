@@ -1,0 +1,14 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+.app {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
